@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
 
 :root{
@@ -501,19 +502,14 @@ heade{
   padding: 20px;
   border-radius: 30px;
   align-items: center;
-  transition: .5s;
 }
-
-.card:hover{
-  background-color: var(--cor-destaques);
-  transform: scale(1.1);
-}
-
 
 .card p{
   font-weight: 600;
   font-size: 1rem;
 }
+
+
 
 /* Rodapé */
 footer{
@@ -553,8 +549,4 @@ footer{
   text-align: center;
   margin-top: 50px;
 }
-
-
-
-
 
