@@ -502,13 +502,18 @@ heade{
   padding: 20px;
   border-radius: 30px;
   align-items: center;
+  transition: .5s;
+}
+
+.card:hover{
+  background-color: #A58D5C;
+  transform: scale(1.1);
 }
 
 .card p{
   font-weight: 600;
   font-size: 1rem;
 }
-
 
 
 /* Rodapé */
