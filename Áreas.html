@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-          <!-- Icones-->
+    <link rel="stylesheet" href="Responsivo.css" media="screen">     
+
+    <!-- Icones-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-        <!-- Fontes-->
+        
+    <!-- Fontes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">    
@@ -19,16 +22,14 @@
     <header>
       <nav class="navbar-desktop">
           <img src="IMG/Logo.png" alt="Logo do escritório" class="logo">
-          <ul class="nav-links">
+          
+          <button class="btn-mobile" id="btn-mobile">Menu</button>
+
+          <ul class="nav-links" id="nav-links">
             <li><a href="index.html">Início</a></li>
-          <li class="dropdown">
-              <a href="#">Escritório <span class="arrow">&#9662;</span></a>
-           <ul class="submenu">
                <li><a href="quem-somos.html">Quem somos</a></li>
-                <li><a href="missão-visão-valores.html">Missão, Visão e Valores</a></li>
-            </ul>
-          </li>
-                <li><a href="#">Áreas de atuação</a></li>
+                <li><a href="missão-visão-valores.html">Missão e Valores</a></li>
+                <li><a href="Áreas.html">Áreas de atuação</a></li>
           </ul>
 
 <!-- ícones das redes sociais -->
@@ -159,166 +160,3 @@
     <script src="script.js"></script>
 
 </body>
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-          <!-- Icones-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-        <!-- Fontes-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">    
-    <title>Áreas de Atuação</title>
-</head>
-<body>
-     <!-- Barra de navegação -->
-    <header>
-      <nav class="navbar-desktop">
-          <img src="IMG/Logo.png" alt="Logo do escritório" class="logo">
-          <ul class="nav-links">
-            <li><a href="index.html">Início</a></li>
-          <li class="dropdown">
-              <a href="#">Escritório <span class="arrow">&#9662;</span></a>
-           <ul class="submenu">
-               <li><a href="quem-somos.html">Quem somos</a></li>
-                <li><a href="missão-visão-valores.html">Missão, Visão e Valores</a></li>
-            </ul>
-          </li>
-                <li><a href="#">Áreas de atuação</a></li>
-          </ul>
-
-<!-- ícones das redes sociais -->
-    <section class="icons">
-        <a href="https://www.instagram.com/caio.araujo.adv/" target="_blank">
-          <i class="bi bi-instagram"></i>
-        </a>
-        <a href="https://www.facebook.com/caio.araujo.adv" target="_blank">
-          <i class="bi bi-facebook"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/caio-augusto-borges-de-araujo-50769aa0/" target="_blank">
-          <i class="bi bi-linkedin"></i>
-        </a>
-        <a href="https://api.whatsapp.com/send?1=pt_BR&phone=+5511988284937" target="_blank">
-          <i class="bi bi-whatsapp"></i>
-        </a>
-    </section>
-    </nav>
-</header>
-
-<main>
-<section class="titulo-atuacao">
-    <h1>Áreas de Atuação - 360°</h1>
-
-    <p>
-        Somos um escritório que busca, <strong>não somente</strong>, o atendimento multilateral das 
-        matérias jurídicas, mas, também, a conectividade e interdisciplinaridade entre elas, 
-        tratando a problemática trazida pelo cliente com uma visão 360º, com um olhar <em>holístico</em> e 
-        <em>sistemático.</em>
-    </p>
-</section>
-
-    <section class="grid-container">
-        <div class="card">
-            <p>Direito do Consumidor</p>
-        </div>
-
-        <div class="card">
-            <p>Direito Civíl</p>
-        </div>
-
-        <div class="card">
-            <p>Direito de Família e Sucessões</p>
-        </div>
-
-        <div class="card">
-            <p>Planejamento Patrimonial</p>
-        </div>
-
-        <div class="card">
-            <p>Direito iImobiliário</p>
-        </div>
-
-        <div class="card">
-            <p>Direito Administrativo</p>
-        </div>
-
-        <div class="card">
-            <p>Compliance</p>
-        </div>
-    
-        <div class="card">
-            <p>Tributário</p>
-        </div>
-
-        <div class="card">
-            <p>Direito Constitucional</p>
-        </div>
-
-        <div class="card">
-            <p>Recuperação de Crédito</p>
-        </div>
-
-        <div class="card">
-            <p>Direito do Trabalho</p>
-        </div>
-
-        <div class="card">
-            <p>Direito Previdenciário</p>
-        </div>
-
-        <div class="card">
-            <p>Telecomunicações</p>
-        </div>
-
-        <div class="card">
-            <p>Contratos</p>
-        </div>
-
-    </section>
-
-</main>
-
-<!-- Footer do site-->
-<footer>
-      <div class="footer-container">
-    <div class="footer-info">
-      <h3>Caio Araujo Advocacia</h3>
-      <p>Av. Paulista, 1765 – 7º Andar - São Paulo, SP<br>
-         Próximo à estação Trianon-Masp</p>
-      <p>Email: contato@caioaraujo.adv.br</p>
-      <p>Telefone: (11) 98828-4937</p>
-    </div>
-
-    <div class="footer-links">
-      <h4>Links Rápidos</h4>
-      <ul>
-        <li><a href="#">Início</a></li>
-        <li><a href="#">Quem somos</a></li>
-        <li><a href="#">Áreas de atuação</a></li>
-        <li><a href="#">Notícias</a></li>
-      </ul>
-    </div>
-
-    <div class="footer-social">
-      <h4>Redes sociais</h4>
-      <a href="https://www.instagram.com/caio.araujo.adv/" target="_blank"><i class="bi bi-instagram"></i></a>
-      <a href="https://www.facebook.com/caio.araujo.adv" target="_blank"><i class="bi bi-facebook"></i></a>
-      <a href="https://www.linkedin.com/in/caio-augusto-borges-de-araujo-50769aa0/" target="_blank"><i class="bi bi-linkedin"></i></a>
-      <a href="https://api.whatsapp.com/send?1=pt_BR&phone=+5511988284937" target="_blank"><i class="bi bi-whatsapp"></i></a>
-    </div>
-  </div>
-
-  <div class="footer-bottom">
-    <p>&copy; 2025 Caio Araujo Advocacia. Todos os direitos reservados.</p>
-  </div>
-</footer>
-    <script src="script.js"></script>
-
-</body>
->>>>>>> 6489954c36e1fd31c758a9e9245db4e3a5529af3
-</html>

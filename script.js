@@ -22,4 +22,14 @@ document.addEventListener('click', function(e) {
       item.classList.remove('open');
     });
   }
+
 });
+
+const btnMobile = document.getElementById('btn-mobile');
+
+function toggleMenu(){
+  const nav = document.getElementById('nav-links')
+  nav.classList.toggle('active')
+}
+
+btnMobile.addEventListener('click', toggleMenu)

@@ -1,0 +1,30 @@
+@media (max-width: 920px){
+    .btn-mobile{
+        display: block;
+        margin-right: 4%;
+    }
+
+    .nav-links{
+        display: none; 
+        position: absolute;
+        width: 50%;
+        top: 50px;
+        right: 0;
+        background-color: black;
+    }
+
+    .nav-links li a{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .icons{
+        display: none;
+    }
+
+    #nav-links.active {
+        display: flex;
+        flex-direction: column;
+    }
+}
