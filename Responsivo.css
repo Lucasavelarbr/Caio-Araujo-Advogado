@@ -40,10 +40,11 @@
 
     .txt-perfil{
        padding: 3%;
+       text-align: left;
     }
 
     .txt-perfil h1{
-        text-align: center;
+        text-align: left;
         margin-top: 30px;
     }
 
@@ -76,6 +77,18 @@
 
     .grid-fotos img{
         width: 20rem;
+    }
+
+    .btn-contato{
+       text-align: center;
+    }
+
+    .escritorio h2, .quem-somos h3, .missao h3{
+        text-align: center;
+    }
+
+    .escritorio p, .quem-somos p, .missao p {
+        text-align: center;
     }
 
  /* missão visão e valores */
