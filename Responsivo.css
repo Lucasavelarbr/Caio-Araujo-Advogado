@@ -64,7 +64,7 @@
 }
 }
 
-@media (min-width: 18rem) and (max-width: 48rem){
+@media (min-width: 18rem) and (max-width: 50rem){
     .grid-fotos{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
