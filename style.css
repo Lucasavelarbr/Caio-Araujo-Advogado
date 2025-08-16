@@ -78,32 +78,6 @@ heade{
   margin-left: 5px;
 }
 
-/* submenu */
-.submenu {
-  display: none;
-  position: absolute;
-  background: rgb(0, 0, 0);
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  border: none;
-  top: 100%;
-  left: 0;
-  z-index: 10;
-}
-
-.submenu li a {
-  padding: 10px 15px;
-  white-space: nowrap;
-}
-
-.submenu li a:hover{
-  color: var(--cor-Link-botões);
-}
-
-.dropdown.open .submenu {
-  display: block;
-}
 
 .icons {
   display: flex;
@@ -269,14 +243,15 @@ heade{
 }
 
 #perfil img{
-  width: 90%;
+  width: 70%;
   height: 30rem;
   background-size: cover;
   object-fit: cover;
   border-radius: 10px;
-  margin: 5%;
+  margin: 5% auto;
   object-position: top;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.447);
+  display: block;
 }
 
 /* título */
@@ -550,7 +525,7 @@ footer{
 
 .footer-social a{
   margin: 3px;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: var(--cor-Link-botões);
 }
 

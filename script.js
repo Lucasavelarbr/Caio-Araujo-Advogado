@@ -26,10 +26,20 @@ document.addEventListener('click', function(e) {
 });
 
 const btnMobile = document.getElementById('btn-mobile');
+const nav = document.getElementById('nav-links');
 
-function toggleMenu(){
-  const nav = document.getElementById('nav-links')
-  nav.classList.toggle('active')
+function toggleMenu() {
+  nav.classList.toggle('active');
 }
 
-btnMobile.addEventListener('click', toggleMenu)
+// Abrir/fechar no clique do botão
+btnMobile.addEventListener('click', toggleMenu);
+
+// Fechar ao clicar fora do menu
+document.addEventListener('click', function (event) {
+  const isClickInsideMenu = nav.contains(event.target) || btnMobile.contains(event.target);
+  
+  if (!isClickInsideMenu && nav.classList.contains('active')) {
+    nav.classList.remove('active');
+  }
+});

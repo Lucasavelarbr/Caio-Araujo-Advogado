@@ -1,4 +1,4 @@
-@media (max-width: 920px){
+@media (max-width: 57.5rem){
     .btn-mobile{
         display: block;
         margin-right: 4%;
@@ -27,4 +27,124 @@
         display: flex;
         flex-direction: column;
     }
+
+    .topo{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .perfil img{
+        display: block;
+        margin: 0 auto;        
+    }
+
+    .txt-perfil{
+       padding: 3%;
+    }
+
+    .txt-perfil h1{
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .escritorio{
+        display: flex;
+        justify-content: left;
+    }
+
+    .escritorio p{
+        text-align: center;
+    }
+
+    .grid-fotos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 3%;
 }
+}
+
+@media (min-width: 18rem) and (max-width: 48rem){
+    .grid-fotos{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        padding: 4%;
+        margin: 10px auto
+
+    }
+
+    .grid-fotos img{
+        width: 20rem;
+    }
+
+ /* missão visão e valores */
+
+   .img-missao, .img-visao, .img-valores {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+    padding: 2rem 1rem;
+  }
+
+  .img-missao img, .img-visao img, .img-valores img {
+    width: 100%;
+    max-width: 400px; 
+    margin: 0 0 1rem 0; 
+  }
+
+  .img-missao h2, .img-visao h2, .img-valores h2,
+  .img-missao p, .img-visao p, .img-valores p {
+    margin: 0;
+    max-width: 100%;
+  }  
+
+/* footer */
+.footer-container {
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    padding: 30px 15px;
+  }
+  
+  .footer-info, .footer-links, .footer-social {
+    margin: 0; 
+    margin-bottom: 20px; 
+    width: 100%;
+    text-align: left;
+  }
+  
+  .footer-info h3, .footer-links h4 {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links ul {
+    padding: 0; 
+    list-style: none; 
+  }
+  
+  .footer-links li {
+    margin-bottom: 5px;
+  }
+
+  .footer-social {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center; 
+    }
+
+  .footer-social a {
+    margin: auto; 
+    font-size: 2rem; 
+    }
+
+  /* Ajustes para o texto de copyright */
+  .footer-bottom {
+    text-align: center;
+    font-size: 1rem;
+    }
+}
+
+    
+
