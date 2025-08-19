@@ -1,7 +1,12 @@
 @media (max-width: 57.5rem){
     .btn-mobile{
-        display: block;
-        margin-right: 4%;
+        display: flex;
+        padding: .5rem 2rem;
+        font-size: 1.2rem;
+        border: none;
+        background-color: transparent;
+        color: aliceblue;
+        cursor: pointer;
     }
 
     .nav-links{
@@ -31,6 +36,8 @@
     .topo{
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: start;
     }
 
     .perfil img{
@@ -48,47 +55,59 @@
         margin-top: 30px;
     }
 
-    .escritorio{
-        display: flex;
-        justify-content: left;
-    }
-
-    .escritorio p{
-        text-align: center;
-    }
-
     .grid-fotos{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
         padding: 3%;
 }
+
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  padding: 4%;
+  margin: 10px auto;
+}
+
+.card:hover{
+  pointer-events: none;
+}
+
 }
 
 @media (min-width: 18rem) and (max-width: 50rem){
+
+    .btn-contato button{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 300px;
+      color: black;
+      font-weight: 500;
+    }
+
+
     .grid-fotos{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
         padding: 4%;
-        margin: 10px auto
-
+        margin: 50px auto;
     }
 
     .grid-fotos img{
         width: 20rem;
     }
 
-    .btn-contato{
-       text-align: center;
-    }
-
     .escritorio h2, .quem-somos h3, .missao h3{
         text-align: center;
+        justify-content: center;
     }
 
     .escritorio p, .quem-somos p, .missao p {
         text-align: center;
+        
     }
 
  /* missão visão e valores */
@@ -105,6 +124,7 @@
     width: 100%;
     max-width: 400px; 
     margin: 0 0 1rem 0; 
+    pointer-events: none;
   }
 
   .img-missao h2, .img-visao h2, .img-valores h2,
@@ -112,6 +132,25 @@
     margin: 0;
     max-width: 100%;
   }  
+
+  /* Área de Atuação - Grid */
+
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  padding: 4%;
+  margin: 10px auto;
+  justify-content: center;
+}
+
+.card:hover{
+  pointer-events: none;
+}
+
+.card p{
+  white-space: nowrap;
+}
 
 /* footer */
 .footer-container {
