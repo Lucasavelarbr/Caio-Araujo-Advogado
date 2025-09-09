@@ -1,4 +1,4 @@
-@media (max-width: 57.5rem){
+@media (max-width: 920px){
     .btn-mobile{
         display: flex;
         padding: .5rem 2rem;
@@ -7,21 +7,26 @@
         background-color: transparent;
         color: aliceblue;
         cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
     }
 
     .nav-links{
         display: none; 
         position: absolute;
-        width: 50%;
+        width: 45%;
+        height: 50vh;
         top: 50px;
         right: 0;
         background-color: black;
     }
 
+    .nav-links a:hover{
+      color: var(--cor-texto);
+    }
+
     .nav-links li a{
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
+        display: block;
+        -webkit-tap-highlight-color: transparent;
     }
 
     .icons{
@@ -31,6 +36,9 @@
     #nav-links.active {
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
     }
 
     .topo{
@@ -46,13 +54,14 @@
     }
 
     .txt-perfil{
-       padding: 3%;
-       text-align: left;
+       text-align: center;
+       margin: 0 auto;
+       padding: 5%;
     }
 
     .txt-perfil h1{
-        text-align: left;
-        margin-top: 30px;
+        text-align: center;
+        margin: 30px auto;
     }
 
     .grid-fotos{
@@ -76,17 +85,27 @@
 
 }
 
-@media (min-width: 18rem) and (max-width: 50rem){
+@media (min-width: 300px) and (max-width: 800px){
 
-    .btn-contato button{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 300px;
-      color: black;
-      font-weight: 500;
+.btn-contato {
+  display: flex;
+  justify-content: center; 
+  margin: 0 auto; 
+  }
+
+.btn-links {
+  width: 80%;              /* ocupa 80% da largura da tela */
+  max-width: 18rem;        /* não passa de 300px */
+  text-align: center;      /* texto centralizado */
+  text-decoration: none;
+  font-weight: 500;
+  color: black;
+  }
+
+    #perfil img{
+      height: 12.5rem;
+      width: 18rem;
     }
-
 
     .grid-fotos{
         display: grid;
@@ -103,12 +122,9 @@
     .escritorio h2, .quem-somos h3, .missao h3{
         text-align: center;
         justify-content: center;
+        font-size: 2rem;
     }
 
-    .escritorio p, .quem-somos p, .missao p {
-        text-align: center;
-        
-    }
 
  /* missão visão e valores */
 
@@ -145,7 +161,8 @@
 }
 
 .card:hover{
-  pointer-events: none;
+  transform: scale(1);
+  background-color: var(--cor-hover);
 }
 
 .card p{
