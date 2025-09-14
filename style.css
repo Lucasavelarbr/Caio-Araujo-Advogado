@@ -139,17 +139,18 @@ header {
 }
 
 /* Botão de Agendar visita */
-.btn-contato button{
+.btn-links{
   background-color: var(--cor-Link-botões);
   color: black;
   border: none;
   cursor: pointer;
   font-size: 1rem;
   font-weight: 500;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
   padding: .8rem 1.5rem;
   border-radius: 30px;
+  text-decoration: none; 
+  display: inline-block;  
 }
 
 /* Nosso escritório */
@@ -235,7 +236,7 @@ header {
 /* Quem somos - página secudária */
 .txt-escritorio{
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   margin-top: 4rem;
   padding: 2rem 1rem;
   line-height: 1,5;
