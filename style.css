@@ -27,7 +27,7 @@ body{
     background-attachment: fixed;
 }
 
-heade{
+header {
     position: sticky;
     z-index: 1;
     top: 0;
